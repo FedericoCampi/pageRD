@@ -444,6 +444,12 @@ font-style: normal;
         grid-column-start : span 2;
     }
 } 
+@media (max-width: 2500px){
+    .card{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
 @media (max-width: 1800px){
     .card{
         margin-right: 40px;
