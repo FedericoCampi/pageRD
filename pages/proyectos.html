@@ -10,62 +10,86 @@
     <link rel="shortcut icon" href="../resources/icons8-website-100.png" type="image/x-icon">
     <title>proyectos</title>
 
+    <!--Css de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!--Css-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <a title="http" href="../index.html"><img class="header__logo" src="../resources/icons8-website-100.png" alt="http" /></a>
-        <ul class="header__list">
-            <li class="header__item"><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-            <li class="header__item"><a href="proyectos.html">Proyectos</a></li>
-            <li class="header__item"><a href="membresia.html">Membresía</a></li>
-            <li class="header__item"><a href="contacto.html">Contacto</a></li>
-        </ul>
-        </nav>         
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a title="http" href="../index.html"><img class="header__logo" src="../resources/httpTransparent.png" alt="http" /></a>
+                    <a class="navbar-brand" href="../index.html">IA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="membresia.html">Membresía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
     </header>
     <main>
-    <div>
-        <div class="proyectos__container">
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen1.jpg" class="proyectos__img" alt="ondas">
-                <h2 class="proyectos__title">Imagen 1</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen2.jpg" class="proyectos__img" alt="pasillo">
-                <h2 class="proyectos__title">Imagen 2</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen3.jpg" class="proyectos__img" alt="stonks">
-                <h2 class="proyectos__title">Imagen 3</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen4.jpg" class="proyectos__img" alt="street">
-                <h2 class="proyectos__title">Imagen 4</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen5.jpg" class="proyectos__img" alt="code">
-                <h2 class="proyectos__title">Imagen 5</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen6.jpg" class="proyectos__img" alt="discos">
-                <h2 class="proyectos__title">Imagen 6</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen7.jpg" class="proyectos__img" alt="lights">
-                <h2 class="proyectos__title">Imagen 7</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen8.jpg" class="proyectos__img" alt="mac">
-                <h2 class="proyectos__title">Imagen 8</h2>
-            </div>
-            <div class="proyectos__item">
-                <img src="../resources/projects/imagen9.jpg" class="proyectos__img" alt="micro">
-                <h2 class="proyectos__title">Imagen 9</h2>
+        <div class="proyectos__flex">
+            <div class="proyectos__div">
+                <h1 class="titleh1">Proyectos</h1>
             </div>
         </div>
-    </div>
-
+        <div>
+            <div class="proyectos__container">
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen1.jpg" class="proyectos__img" alt="ondas">
+                    <h2 class="proyectos__title">Imagen 1</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen2.jpg" class="proyectos__img" alt="pasillo">
+                    <h2 class="proyectos__title">Imagen 2</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen3.jpg" class="proyectos__img" alt="stonks">
+                    <h2 class="proyectos__title">Imagen 3</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen4.jpg" class="proyectos__img" alt="street">
+                    <h2 class="proyectos__title">Imagen 4</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen5.jpg" class="proyectos__img" alt="code">
+                    <h2 class="proyectos__title">Imagen 5</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen6.jpg" class="proyectos__img" alt="discos">
+                    <h2 class="proyectos__title">Imagen 6</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen7.jpg" class="proyectos__img" alt="lights">
+                    <h2 class="proyectos__title">Imagen 7</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen8.jpg" class="proyectos__img" alt="mac">
+                    <h2 class="proyectos__title">Imagen 8</h2>
+                </div>
+                <div class="proyectos__item">
+                    <img src="../resources/projects/imagen9.jpg" class="proyectos__img" alt="micro">
+                    <h2 class="proyectos__title">Imagen 9</h2>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer__container">
@@ -81,5 +105,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

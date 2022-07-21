@@ -1,6 +1,4 @@
 * {
-    padding: 1px;
-    margin: 1px;
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
@@ -9,73 +7,51 @@
 body{
     background-color: #131313;
 }
-header {
+header{
+    margin-top: 2px;
     background-color: #2B2B2B;
-    border-radius:15px;
+    margin-bottom: 4px;
 }
 footer{
     background-color: #2B2B2B;
-    border-radius:15px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .titleh1{
-    font-size: 25px;
+    font-size: 50px;
     color: #1561F0;
 }
 h2{
     color: #1561F0;
 }
 
-.div__header{
-    display: flex;
-}
-
-.header__nav{
-    display: flex;
-    width: 100%;
-    position: relative;
-    flex-wrap: wrap;
-}
-.header__nav img{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    top: 5px;
-    left: 20px;
-    position: relative;
-    border-radius: 30px;
-    background-color: #86868B;
-}
-
-.header__list{
-    list-style: none;
-    display: flex;
-    padding: 0 16px;
+// header
+#navbarNav{
     justify-content: flex-end;
-    flex-grow: 3;
+}
+.navbar-collapse{
+    justify-content: flex-end;
 }
 
-.header__item{
-    padding: 20px;
-    transition: background-color 0.8s;
-    border-radius: 15px;
+.header__logo{
+    width: 70px;
+    height: 58px;
 }
-
-.header__item:hover{
-    background-color: #414141;   
+.container-fluid a{
+    color: #1561F0
 }
-
-.header__item a {
-    text-decoration: none;
+.nav-item a{
     color: #1561F0;
 }
 
 // main
 
-.container__section{
+.div__section{
     display: flex;
 }
-.container{
+.container__section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -83,16 +59,19 @@ h2{
 .card{
     display: flex;
     width: 350px;
-    height: auto; 
+    height: auto;
     flex-direction: column;
     align-items: center;
     margin: 5px;
     border: 1px solid #d4d4d4;
+    background-color: #414141;
+    justify-content: space-between;
 }   
 .card img{
-    width: 350px;
+    width: 100%;
     height: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 .card img:hover {filter: saturate(180%);}
 
@@ -111,7 +90,7 @@ h2{
 }
 .container__vid{
     display: flex;
-    border: 2px solid #86868B;
+    background-color: #d0d6f5;
 }
 
 
@@ -135,31 +114,50 @@ h2{
 .sobrenos__div{
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-/* .div__video{
+.img__sobrenos{
+    width: 500px;
+    height: auto;
+}
+/* .div__video
     width: 560px;
     height: 315px;
-} */
+ */
+.text__video{
+    margin-right: 20px;
+}
 .video__container {
     position: relative;
 	padding-bottom: 40.75%; /*panorámico*/
-	padding-top: 0px;
+	margin-top: 15px;
 	
-    width: 1280px;
-    height: 720px;
+    width: 1080px;
+    height: 520px;
 }
 .video__container iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 98%;
+	height: 98%;
 }
-
 
 
 // MAIN PROYECTOS GRID
 
+.proyectos__flex{
+    display: flex;
+}
+.proyectos__div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .proyectos__grid{
     display: grid;
 }
@@ -185,6 +183,7 @@ h2{
     color: #86868B;
     background: linear-gradient(rgba(255,255,255,0.3),rgba(0,0,0,1));
     width: 100%;
+    font-size: 2rem;
 }
 
 .proyectos__item:nth-child(4) {
@@ -199,6 +198,15 @@ h2{
 
 // membresia
 
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px;
+    object-fit: none;
+}
+.carousel-inner{
+    height: 400px;
+    background-color: white;
+}
 .flex__member{
     display: flex;
 }
@@ -206,20 +214,10 @@ h2{
     display: flex;
     justify-content: center;
 }
-.title__member{
-    background-color: #86868B;
-    border-radius: 10px;
-    font-size: 25px;
-    color: #1561F0;
-    padding: 15px;
-}
 .img-chica{
     width: 224px;
     height: 225px;
-}
-.img-grande{
-    max-width: 1800px;
-    max-height: 390px;
+    margin-bottom: 10px;
 }
 
 .img-membresia{
@@ -233,7 +231,9 @@ h2{
 .flex__contact{
     display: flex;
 }
-
+.container__fluid{
+    width: 100
+}
 .container__contact{
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@ h2{
 }
 .title__contact {
     font-family: 'Poppins', sans-serif, 'arial';
-    font-weight: 600;
+    font-weight: 500;
     font-size: 72px;
     color: white;
     text-align: center;
@@ -298,14 +298,18 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     width: 50px;
     height: 50px;
     position: relative;
+    margin-top: 8px;
 }
 .footer__div img:hover {-webkit-transform:scale(1.1);transform:scale(1.1);}
 .footer__div {overflow:hidden;}
 
 .name__footer{
     display: flex;
-    align-items: center;
-    width: 50%;
+    width: 100%;
+}
+.name__footer h2{
+    margin-top: 10px;
+    font-size: 2rem;
 }
 .footer__logo{
     margin-left: 5px;
@@ -482,9 +486,16 @@ font-style: normal;
     }
 }
 @media (max-width: 1200px){
+    .video__container{
+        width: 704px;
+        height: 330px;
+    }
     .card{
         margin-right: 40px;
         margin-left: 40px;
+    }
+    .name__footer h2{
+        font-size: 30px;
     }
 }
 @media (max-width: 1024px){
@@ -492,9 +503,23 @@ font-style: normal;
         width: 640px;
         height: 360px;
     }
+    .container__vid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div__video{
+        display: flex;
+        justify-content: center;
+    }
     .card{
         margin-right: 20px;
         margin-left: 20px;
+    }
+}
+@media(max-width: 850px){
+    .name__footer h2{
+        font-size: 20px;
     }
 }
 @media (max-width: 768px){
@@ -508,6 +533,20 @@ font-style: normal;
         padding: 0 0px;
         justify-content: flex-end;
         flex-grow: 3;
+    }
+    .flex__footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .name__footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer__div{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media (max-width: 660px){
     .header__list{
