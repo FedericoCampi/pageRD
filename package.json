@@ -1,0 +1,25 @@
+{
+  "name": "paginadefinitiva",
+  "version": "1.0.0",
+  "description": "<h1> Page RD</h1>\r <p>Este sitio es full responsive design</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoCampi/pageRD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoCampi/pageRD/issues"
+  },
+  "homepage": "https://github.com/FedericoCampi/pageRD#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
