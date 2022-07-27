@@ -23,11 +23,11 @@ footer{
     padding-right: 10px;
 }
 .titleh1{
-    font-size: 50px;
-    color: #E73725;
+    color: $color__h1;
+    font-size: $size__h1;
 }
 h2{
-    color: #E73725;
+    color: $title__h2;
 }
 
 // header
