@@ -131,7 +131,13 @@ h2 {
     height: auto; }
 
 .text__video {
-  margin-right: 20px; }
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column; }
+
+.text__video h1 {
+  color: #E73725;
+  text-align: center; }
 
 .video__container {
   position: relative;

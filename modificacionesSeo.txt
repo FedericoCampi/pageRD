@@ -1,0 +1,6 @@
+Agrege <meta keywords=""> a todas mis paginas
+Agrege <meta description=""> a todas mis paginas
+title bien aplicado para cada pagina
+
+Todas las paginas tiene un solo H1
+Las imagenes estan optimizadas para una mejor performance
