@@ -189,7 +189,7 @@ h2 {
     color: #d0d0d0;
     background: linear-gradient(rgba(249, 1, 1, 0.3), black);
     width: 100%;
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
   .proyectos__item:nth-child(4) {
     grid-column-start: span 2; }
   .proyectos__item:nth-child(3) {
