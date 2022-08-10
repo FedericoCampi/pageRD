@@ -103,6 +103,9 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+  .card__a {
+    text-decoration: none;
+    color: white; }
 
 .flex__vid {
   display: flex;
@@ -138,6 +141,9 @@ h2 {
 .text__video h1 {
   color: #E73725;
   text-align: center; }
+
+.text__video p {
+  margin: 0 0 0 10px; }
 
 .video__container {
   position: relative;
@@ -177,12 +183,13 @@ h2 {
     height: 100%;
     object-fit: cover; }
   .proyectos__title {
+    padding-left: 10px;
     position: absolute;
     bottom: 0;
-    color: #86868B;
-    background: linear-gradient(rgba(255, 255, 255, 0.3), black);
+    color: #d0d0d0;
+    background: linear-gradient(rgba(249, 1, 1, 0.3), black);
     width: 100%;
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   .proyectos__item:nth-child(4) {
     grid-column-start: span 2; }
   .proyectos__item:nth-child(3) {
@@ -205,6 +212,24 @@ h2 {
 .flex__member {
   display: flex;
   justify-content: center; }
+
+.beneficios__tittle {
+  padding-left: 10px; }
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; }
+
+.beneficios__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 5px;
+  margin: 5px; }
+
+.beneficios__item h4 {
+  padding: 5px 0 0 10px; }
 
 .img-membresia {
   width: 224px;
@@ -515,7 +540,10 @@ input[type=checkbox]:checked + label {
     font-weight: 300;
     font-size: 52px;
     color: #E73725;
-    text-align: center; } }
+    text-align: center; }
+  .footer__div {
+    display: flex;
+    justify-content: space-evenly; } }
 
 @media (max-width: 600px) {
   .container__vid {
