@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,400;1,700&family=Raleway:wght@100&family=Roboto+Mono:ital,wght@1,500;1,700&family=Roboto:ital,wght@1,300&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="../resources/deportiv/iconsSport.png" type="image/x-icon">
-    <title>membresia - sportCamp</title>
+    <link rel="shortcut icon" href="../resources/sports.png" type="image/x-icon">
+    <title>Productos - FedericoCampi</title>
 
     <!--Css de bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -22,7 +22,7 @@
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <a title="http" href="../index.html"><img class="header__logo" src="../resources/deportiv/iconsSport.png" alt="http" /></a>
+                <a title="http" href="../index.html"><img class="header__logo" src="../resources/sports.png" alt="http" /></a>
                 <a class="navbar-brand" href="../index.html">SPORTCAMP</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,10 +33,10 @@
                             <a class="nav-link" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">Productos</a>
+                            <a class="nav-link" href="membresia.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="membresia.html">Membresía</a>
+                            <a class="nav-link" href="proyectos.html">Destacados</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -47,54 +47,62 @@
         </nav>   
     </header>
     <main>
-        <div class="flex__member">
-            <h1 class="titleh1 title__member">Membresía</h1>
-        </div>
-        <div class="flex__member">
-            <img class="img-membresia" src="../resources/premium.png">
-        </div>
-
-        <h3 class="flex__member beneficios__tittle"> Beneficios de afiliarte con nosotros</h3>
-
-        <div class="beneficios">
-            <div class="beneficios__item">
-                <h4> Cuenta común</h4>
-                <ul>
-                    <li>Precios normales</li>
-                    <li>No tenes aviso de nuestros descuentos</li>
-                    <li>No te conviene</li>
-                </ul>
-            </div>
-            <div class="beneficios__item">
-                <h4> Cuenta Premium</h4>
-                <ul>
-                    <li>Descuentos en Indumentaria</li>
-                    <li>Suscripción a nuestro Newsletter</li>
-                    <li>Prioridad en entrada de stock de productos</li>
-                </ul>
-            </div>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class=" carousel-item active">
-                    <img src="../resources/deportiv/biciRuta.jpg" class="h-100 w-100" alt="business">
+        <div class="div__section container__section">
+            <article class="card">
+                <img src="../resources/deportiv/shoes.jpg" alt="shoes">
+                <div class="card__info">
+                    <h2>Calzado</h2>
+                    <button type="button" href="pages/proyectos.html" class="btn btn-secondary">
+                        <a target="_blank" class="fcc-btn card__a" href="pages/proyectos.html">Ver más</a>
+                    </button>
                 </div>
-                <div class="carousel-item">
-                    <img src="../resources/deportiv/kayak.jpg" class="h-100 w-100" alt="innovacion">
+            </article>
+            <article class="card">
+                <img src="../resources/deportiv/joggin.jpg" alt="joggin">
+                <div class="card__info">
+                    <h2>Pantalones</h2>
+                    <button type="button" href="pages/proyectos.html" class="btn btn-secondary">
+                        <a target="_blank" class="fcc-btn card__a" href="pages/proyectos.html">Ver más</a>
+                    </button>
                 </div>
-                <div class="carousel-item">
-                    <img src="../resources/deportiv/skate.jpg" class="h-100 w-100" alt="socialmedia">
+            </article>
+            <article class="card">
+                <img src="../resources/deportiv/remera.jpg" alt="remera">
+                <div class="card__info">
+                    <h2>Remeras</h2>
+                    <button type="button" href="pages/proyectos.html" class="btn btn-secondary">
+                        <a target="_blank" class="fcc-btn card__a" href="pages/proyectos.html">Ver más</a>
+                    </button>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+            </article>
+            <article class="card">
+                <img src="../resources/deportiv/inviernoDepor.jpg" alt="invierno">
+                <div class="card__info">
+                    <h2>Invierno</h2>
+                    <button type="button" href="pages/proyectos.html" class="btn btn-secondary">
+                        <a target="_blank" class="fcc-btn card__a" href="pages/proyectos.html">Ver más</a>
+                    </button>
+                </div>
+            </article>
+            <article class="card ocultar__card">
+                <img src="../resources/deportiv/pesas.jpg" alt="pesas">
+                <div class="card__info">
+                    <h2>Musculación</h2>
+                    <button type="button" href="pages/proyectos.html" class="btn btn-secondary">
+                        <a target="_blank" class="fcc-btn card__a" href="pages/proyectos.html">Ver más</a>
+                    </button>
+                </div>
+            </article>
+            <article class="card ocultar__card">
+                <img src="../resources/deportiv/accesorios.jpg" alt="accesorios">
+                <div class="card__info">
+                    <h2>Accesorios</h2>
+                    <button type="button" href="pages/proyectos.html" class="btn btn-secondary">
+                        <a target="_blank" class="fcc-btn card__a" href="pages/proyectos.html">Ver más</a>
+                    </button>
+                </div>
+            </article>
+    </div>
     </main>
     <footer>
         <div class="footer__container footer__flex">

@@ -15,7 +15,7 @@ body{
 
 header{
     margin:0 0 4 0px;
-    background-color: #E1E1E1;
+    background: linear-gradient(90deg, rgba(245,0,0,1) 0%, rgba(125,66,66,1) 19%, rgba(112,109,129,1) 49%, rgba(0,0,0,1) 100%);
 }
 footer{
     background-color: #2B2B2B;
@@ -76,7 +76,10 @@ h2{
         text-decoration: none;
         color: white;
     }
-} 
+}
+.btn-secondary a{
+    color: black;
+}
 
 
 // multimedia y video
@@ -87,7 +90,7 @@ h2{
 }
 .container__vid{
     display: flex;
-    background-color: #E1E1E1;
+    background: linear-gradient(270deg, rgba(245,0,0,1) 0%, rgba(125,66,66,1) 19%, rgba(112,109,129,1) 49%, rgba(0,0,0,1) 100%);
 }
 
 // sobre-nosotros
@@ -113,6 +116,7 @@ h2{
     &__img{
         width: 500px;
         height: auto;
+        filter: grayscale(90%);
     }
 }
 
@@ -197,14 +201,19 @@ h2{
 
 // membresia
 
+.carousel{
+    margin-top: 20px;
+}
 .carousel-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .carousel-inner{
-    height: 400px;
-    background-color: white;
+    height: 600px;
+}
+.imgGrey{
+    filter: grayscale(80%);
 }
 .flex__member{
     display: flex;
@@ -353,7 +362,7 @@ textarea {
     float: right;
     padding: 7px 35px;
     border-radius: 60px;
-    background-color: #6c757d;
+    background: linear-gradient(270deg, rgba(245,0,0,1) 0%, rgba(125,66,66,1) 19%, rgba(53,52,61,1) 49%, rgba(0,0,0,1) 100%);
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -452,13 +461,13 @@ font-style: normal;
 @media (max-width: 1440px){
     .video__container{
         width: 854px;
-        height: 480px;
+        height: 480px; 
     }
     .card{
         margin: 15px 15px 0px 15px;
     }
     .carousel-inner{
-        height: 300px;
+        height: 600px;
         background-color: white;
     }
 }
@@ -492,7 +501,7 @@ font-style: normal;
         margin: 10 4 0 4 px;
     }
     .carousel-inner{
-        height: 200px;
+        height: 500px;
         background-color: white;
     }
 }
@@ -566,7 +575,7 @@ font-style: normal;
         margin-bottom: 10px;
     }
     .carousel-inner{
-        height: 100px;
+        height: 400px;
         background-color: white;
     }
 }
@@ -695,6 +704,10 @@ font-style: normal;
         font-size: 15px;
         color: #9b9b9b;
         line-height: 1.5;
+    }
+    .carousel-inner{
+        height: 200px;
+        background-color: white;
     }
     
 }
